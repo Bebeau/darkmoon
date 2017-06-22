@@ -1,0 +1,16 @@
+@include keyframes(float) {
+    0%, 100% {
+    	@include transform(translateY(0));
+    }
+    50% {
+    	@include transform(translateY(20px));
+    }
+}
+@include keyframes(freeze) {
+    0%, 100% {
+    	@include transform(translateY(0));
+    }
+    50% {
+    	@include transform(translateY(0));
+    }
+}

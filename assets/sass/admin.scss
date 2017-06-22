@@ -1,0 +1,60 @@
+img {
+	max-width: 100%;
+	min-height: 100%;
+	height: auto;
+}
+.photo {
+	position: relative;
+	overflow: hidden;
+	vertical-align: middle;
+	&:hover {
+		cursor: move;
+		.button-remove {
+			opacity: 1;
+		}
+	}
+	.button-remove {
+		opacity: 0;
+		position: absolute;
+		top: 5px;
+		right: 5px;
+		color: red;
+		font-weight: bold;
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+		-o-border-radius: 50%;
+		border-radius: 50%;
+		background: white;
+		border: none;
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		-o-box-shadow: none;
+		box-shadow: none;
+	}
+}
+.photoWrap {
+	-webkit-column-count: 3;
+	-webkit-column-gap: 0;
+	-moz-column-count: 3;
+	-moz-column-gap: 0;
+	column-count: 3;
+	column-gap: 0;
+	.photo {
+		position: relative;
+		margin: 0;
+		padding: 0;
+		vertical-align: top;
+		line-height: 0;
+		font-size: 0;
+		img {
+			max-width: 100%;
+		}
+	}
+}
+.ui-state-highlight {
+	border: 1px dashed black;
+	display: inline-block;
+	width: 100%;
+	height: 200px;
+	margin: 0;
+}
