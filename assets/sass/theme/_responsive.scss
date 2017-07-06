@@ -17,6 +17,11 @@
 			height: 646px;
 		}
 	}
+	#about,#video,#photos {
+		h3 {
+			font-size: 32pt;
+		}
+	}
 	#about {
 		article {
 			&.copy {
@@ -24,8 +29,16 @@
 				line-height: normal;
 				padding: 0 25px;
 				h3 {
-					left: -75px;
+					left: 0;
 					line-height: normal;
+					margin-bottom: 25px;
+					font-size: 18pt;
+					span {
+						font-size: 14pt;
+					}
+				}
+				p {
+					line-height: 21px;
 				}
 			}
 		}
@@ -239,9 +252,9 @@
 				h3 {
 					left: 0;
 					font-size: 24pt !important;
-					letter-spacing: 10px;
+					letter-spacing: 2px;
 					text-align: center;
-					margin-top: 15px;
+					margin-top: 25px;
 				}
 			}
 		}
@@ -257,7 +270,7 @@
 		h3 {
 			left: 0;
 			font-size: 24pt !important;
-			letter-spacing: 10px;
+			letter-spacing: 2px;
 			text-align: center;
 			margin: 15px 0;
 			line-height: normal;

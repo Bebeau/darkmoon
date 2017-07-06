@@ -236,6 +236,7 @@ var init = {
         });
     },
     day: function() {
+    	jQuery('body').removeClass('night');
         jQuery('#banner').removeClass('night');
         jQuery('#sun').addClass('in');
         jQuery('#clouds').addClass('in');
@@ -249,6 +250,7 @@ var init = {
         );
     },
     night: function() {
+    	jQuery('body').addClass('night');
         jQuery('#banner').addClass('night');
         jQuery('#trees').removeClass('in');
         jQuery('#sun').removeClass('in');

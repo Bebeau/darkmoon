@@ -10,6 +10,17 @@ Author URI: http://theinitgroup.com
 // import all custom theme styles
 
 @import url('https://fonts.googleapis.com/css?family=Didact+Gothic|Yeseva+One|Assistant:700');
+@font-face {
+  font-family: 'Nevis';
+  src: url('assets/fonts/nevis.ttf') format('truetype');
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Nova';
+  src: url('assets/fonts/ProximaNova-Light.otf') format('opentype');
+  font-style: normal;
+}
+
 @import "bourbon/_bourbon.scss";
 
 @import "theme/_easing.scss";

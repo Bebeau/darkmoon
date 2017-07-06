@@ -144,4 +144,7 @@
 	<section id="social" class="outer">
 		<?php get_template_part( 'partials/theme/social', 'links' ); ?>
 	</section>
+	<section id="legal">
+		&copy; 2017 Dark Moon Entertainment, LLC
+	</section>
 </header>
