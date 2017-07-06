@@ -281,6 +281,25 @@ header {
 							}
 						}
 					}
+					#signature {
+						margin: 25px 0 0 50px;
+						font-size: 10px;
+						text-transform: uppercase;
+						text-align: left;
+						vertical-align: middle;
+						color: grey;
+						letter-spacing: 1px;
+						.svg {
+							vertical-align: middle;
+							width: 40px;
+							height: auto;
+							margin-left: 5px;
+							@include transform(translate(0,-2px));
+							* {
+								fill: grey;
+							}
+						}
+					}
 				}
 			}
 		}

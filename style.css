@@ -350,6 +350,26 @@ header section {
             line-height: 24px; }
             header section#menu article#menuWrap #details i.fa-envelope {
               font-size: 8pt; }
+        header section#menu article#menuWrap #signature {
+          margin: 25px 0 0 50px;
+          font-size: 10px;
+          text-transform: uppercase;
+          text-align: left;
+          vertical-align: middle;
+          color: grey;
+          letter-spacing: 1px; }
+          header section#menu article#menuWrap #signature .svg {
+            vertical-align: middle;
+            width: 40px;
+            height: auto;
+            margin-left: 5px;
+            -webkit-transform: translate(0, -2px);
+            -moz-transform: translate(0, -2px);
+            -ms-transform: translate(0, -2px);
+            -o-transform: translate(0, -2px);
+            transform: translate(0, -2px); }
+            header section#menu article#menuWrap #signature .svg * {
+              fill: grey; }
   header section#social {
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;

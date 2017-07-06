@@ -138,6 +138,9 @@
 						}
 					?>
 				</div>
+				<div id="signature">
+					Built for you by <a href="https://facebook.com/theinitgroup" target="_BLANK"><img class="svg" src="<?php bloginfo('template_directory');?>/assets/images/init.svg" alt="" /></a>
+				</div>
 			</div>
 		</article>
 	</section>
