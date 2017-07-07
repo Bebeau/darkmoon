@@ -73,12 +73,27 @@ body {
 	}
 }
 .outer {
+	/* W3C */
+	display: inline-flex !important;
+    box-pack: center !important;
+    box-align: center !important;
+	/* Safari, Opera, and Chrome */
+	display: -webkit-inline-flex !important;
+	-webkit-box-pack: center !important;
+	-webkit-box-align: center !important;
+	-webkit-align-items: center !important;
+	 /* Firefox */
+	display: -moz-inline-flexbox !important;
+	-moz-box-pack: center !important;
+	-moz-box-align: center !important;
+	-moz-align-items: center !important;
 	height: 100%;
-	@include transform-style(preserve-3d);
+	width: 100%;
+	align-items: center !important;
+	overflow: hidden;
 	.inner {
-		position: relative;
-		top: 50%;
-		transform: translateY(-50%);
+		margin: auto 0;
+		width: 100%;
 	}
 }
 a,button {
@@ -552,10 +567,11 @@ header {
 }
 #about {
 	box-sizing: border-box;
-	margin-top: 50px;
+	padding: 50px 0 0;
 	background: white;
 	position: relative;
 	z-index: 10;
+	height: auto;
 	article {
 		display: inline-block;
 		width: 50%;
@@ -565,14 +581,14 @@ header {
 			box-sizing: border-box;
 			padding: 0 50px 0 50px;
 			position: relative;
-			height: 100%;
 			h3 {
 				text-align: left;
 				line-height: normal;
 				font-size: 24pt;
 				text-transform: normal;
 				letter-spacing: 2px;
-				margin-bottom: 100px;
+				margin-top: 20px;
+				margin-bottom: 60px;
 				span {
 					font-style: oblique;
 					font-weight: normal;
@@ -593,7 +609,8 @@ header {
 		}
 		.image {
 			width: 100%;
-			height: 100%;
+			height: auto;
+			margin-top: 50px;
 		}
 	}
 }

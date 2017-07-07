@@ -40,7 +40,7 @@
 		        	echo '</div>';
 			        $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID), 'large' ); 
 			        if(!empty($image)) { ?>
-			        	<div class="image" style="background:url(<?php echo $image[0]; ?>) no-repeat scroll top / cover"></div>
+			        	<img class="image" src="<?php echo $image[0]; ?>" />
 			        <?php } else {
 			        	echo '<div class="default_about image"></div>';
 			        }
