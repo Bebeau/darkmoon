@@ -60,7 +60,7 @@
 	echo '</section>';
 
 	echo '<section id="video" data-animation="slideUp">';
-		echo '<iframe src="https://www.youtube.com/embed/VUXcPLRVfag" frameborder="0" allowfullscreen></iframe>';
+		echo '<iframe src="https://www.youtube.com/embed/VUXcPLRVfag?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>';
 	echo '</section>';
 
 	echo '<section id="photos">';

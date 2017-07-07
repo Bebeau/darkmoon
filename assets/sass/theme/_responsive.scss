@@ -163,7 +163,7 @@
 		display: block;
 	}
 	.mobileHide {
-		display: none;
+		display: none !important;
 	}
 	header {
 		&:after {
@@ -232,12 +232,15 @@
 	#about {
 		height: auto;
 		margin-top: 0;
+		padding: 0;
 		article {
 			display: block;
 			width: 100%;
 			&:first-child {
-				height: 50vh;
 				opacity: 1;
+				.image {
+					margin: 0;
+				}
 			}
 			&.copy {
 				left: auto;
@@ -255,6 +258,7 @@
 					letter-spacing: 2px;
 					text-align: center;
 					margin-top: 25px;
+					margin-bottom: 25px;
 				}
 			}
 		}

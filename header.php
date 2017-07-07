@@ -112,7 +112,7 @@
 			<span class="N">N</span>
 			<span class="U">U</span>
 		</article>
-		<article id="menuWrap">
+		<article id="menuWrap" class="outer">
 			<div class="inner">
 				<nav>
 					<ul>
