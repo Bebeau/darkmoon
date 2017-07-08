@@ -1255,11 +1255,14 @@ header.in #social {
   header:after {
     display: none; }
   header section#topmenu article#name {
+    display: none;
     width: 100%;
     padding: 0;
     text-align: center; }
   header section#topmenu article#toggle {
-    display: none; }
+    width: 100%;
+    display: block;
+    text-align: center; }
   header section#menu article#menuWrap {
     padding-left: 0; }
     header section#menu article#menuWrap.in {
@@ -1283,8 +1286,17 @@ header.in #social {
     width: 50px; }
   header.in #menu article:first-child {
     width: 50px; }
-  #banner {
-    display: none; }
+  #banner #logo.show {
+    top: 55%; }
+  #banner.night #clouds {
+    -webkit-transform: translate(0, 100%);
+    -moz-transform: translate(0, 100%);
+    -ms-transform: translate(0, 100%);
+    -o-transform: translate(0, 100%);
+    transform: translate(0, 100%);
+    -webkit-transition: all 5s cubic-bezier(0.4, 0, 0.2, 1);
+    -moz-transition: all 5s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 5s cubic-bezier(0.4, 0, 0.2, 1); }
   #about {
     height: auto;
     margin-top: 0;

@@ -173,12 +173,15 @@
 			&#topmenu {
 				article {
 					&#name {
+						display: none;
 						width: 100%;
 						padding: 0;
 						text-align: center;
 					}
 					&#toggle {
-						display: none;
+						width: 100%;
+						display: block;
+						text-align: center;
 					}
 				}
 			}
@@ -227,7 +230,17 @@
 		}
 	}
 	#banner {
-		display: none;
+		#logo {
+			&.show {
+				top: 55%;
+			}
+		}
+		&.night {
+			#clouds {
+				@include transform(translate(0,100%));
+				@include transition(all 5s $authenticMotion);
+			}
+		}
 	}
 	#about {
 		height: auto;
