@@ -60,8 +60,12 @@
 	echo '</section>';
 
 	echo '<section id="video" data-animation="slideUp">';
-		echo '<div id="playButton"><img src="'.get_bloginfo('template_directory').'/assets/images/play.png" alt="" /></div>';
-		echo '<iframe id="player"></iframe>';
+		if(wp_is_mobile()) {
+			echo '<iframe class="" src=https://www.youtube.com/embed/VUXcPLRVfag?rel=0&amp;showinfo=0&amp;autoplay=1></iframe>';
+		} else {
+			echo '<div id="playButton"><img src="'.get_bloginfo('template_directory').'/assets/images/play.png" alt="" /></div>';
+			echo '<iframe id="player"></iframe>';
+		}
 	echo '</section>';
 
 	echo '<section id="photos">';
