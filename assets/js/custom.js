@@ -338,7 +338,11 @@ var init = {
     	jQuery('#playButton').click(function(e){
     		e.preventDefault();
     		jQuery(this).addClass('clicked');
-    		jQuery('iframe').attr("src",'https://www.youtube.com/embed/VUXcPLRVfag?rel=0&amp;showinfo=0&amp;autoplay=1');
+    		setTimeout(
+    			function(){
+    				jQuery('iframe').attr("src",'https://www.youtube.com/embed/VUXcPLRVfag?rel=0&amp;showinfo=0&amp;autoplay=1');
+    			}, 500
+			);
     	});
     }
 };
